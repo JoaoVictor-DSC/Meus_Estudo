@@ -1,0 +1,72 @@
+:root {
+    --jojo-purple: #6b2d91;
+    --jojo-yellow: #f9d423;
+    --jojo-pink: #ff007f;
+}
+
+.formulario-jojo {
+    font-family: 'Arial Black', sans-serif;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #1a1a1a;
+    color: white;
+    border: 4px solid var(--jojo-purple);
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px var(--jojo-pink);
+}
+
+h2 {
+    text-align: center;
+    color: var(--jojo-yellow);
+    text-transform: uppercase;
+    text-shadow: 2px 2px #ff007f;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid var(--jojo-purple);
+    border-radius: 5px;
+    background: #333;
+    color: white;
+}
+
+button {
+    padding: 12px;
+    background: var(--jojo-yellow);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: var(--jojo-pink);
+    transform: scale(1.05);
+}
+
+.stand-card {
+    list-style: none;
+    background: #333;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 8px solid var(--jojo-yellow);
+    border-radius: 4px;
+}
+
+.stand-name {
+    color: var(--jojo-pink);
+    font-size: 1.2rem;
+}
+
+.linha-divisoria {
+    border: 1px dashed var(--jojo-yellow);
+    margin: 20px 0;
+}

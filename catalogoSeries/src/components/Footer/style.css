@@ -1,0 +1,18 @@
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 40px;
+    background-color: #1a1a1a;
+    border-top: 4px solid var(--jojo-purple, #6b2d91); /* Usa a cor do tema ou roxo padrão */
+    color: #f9d423; /* Amarelo estilo JoJo */
+    text-align: center;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
