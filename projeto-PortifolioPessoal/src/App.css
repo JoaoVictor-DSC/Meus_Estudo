@@ -1,0 +1,73 @@
+/* RESET GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* 🌙 MODO ESCURO PADRÃO: Azul Elétrico e Roxo Neon */
+.app.dark-theme {
+  --bg-pagina-toda: #070714;     /* Fundo espacial escuro */
+  --bg-blocos: #111126;          /* Blocos roxo escuro */
+  --bg-hover: #1b1b3a;           /* Destaque ao passar o mouse */
+  --cor-azul: #00d2ff;           /* Ciano/Azul elétrico */
+  --cor-roxo: #9d4edd;           /* Roxo Neon */
+  --texto-principal: #ffffff;
+  --texto-mutado: #b3b3cc;
+  --borda-bloco: rgba(157, 78, 221, 0.2); /* Borda com leve brilho roxo */
+  --sombra-neon: rgba(0, 210, 255, 0.15);  /* Glow azul */
+}
+
+/* ☀️ MODO CLARO: Tons Pastéis Vivos de Azul e Roxo */
+.app.light-theme {
+  --bg-pagina-toda: #e8ecf8;     /* Fundo azul claro pastel */
+  --bg-blocos: #ffffff;          /* Blocos brancos destacados */
+  --bg-hover: #f0f3fe;           /* Hover lilás sutil */
+  --cor-azul: #2563eb;           /* Azul Royal vivo */
+  --cor-roxo: #7c3aed;           /* Roxo vibrante */
+  --texto-principal: #1e1b4b;   /* Azul escuro para leitura */
+  --texto-mutado: #4b5563;
+  --borda-bloco: rgba(124, 58, 247, 0.15);
+  --sombra-neon: rgba(37, 99, 235, 0.1);
+}
+
+/* APLICAÇÃO DO TEMA NA PÁGINA INTEIRA */
+.app {
+  background-color: var(--bg-pagina-toda);
+  color: var(--texto-principal);
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo-principal {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* BOTÃO INTERATIVO DO TEMA */
+.btn-theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 2px solid var(--cor-roxo);
+  background-color: var(--bg-blocos);
+  color: var(--texto-principal);
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--sombra-neon);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+.btn-theme-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px var(--cor-azul);
+  background-color: var(--bg-hover);
+}
